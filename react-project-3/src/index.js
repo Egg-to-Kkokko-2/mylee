@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import Main from './pages/Main';
+import Login from './pages/Login';
+import Join from './pages/Join';
+import MyPage from './pages/MyPage';
+import Networking from './pages/Networking';
+
+export { Main, Login, Join, MyPage, Networking };
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
